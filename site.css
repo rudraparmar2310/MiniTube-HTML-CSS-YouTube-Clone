@@ -1,0 +1,285 @@
+/* ------------------------------
+   GENERAL STYLES (Poori website ke liye basic style)
+------------------------------ */
+body {
+  font-family: "Montserrat", sans-serif; /* Website ka default font */
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Jab link pe click ho toh smoothly scroll karega */
+  background: #f8f9fb; /* Page ka halka grey background color */
+}
+
+/* --- SECTION COLORS (Section ke rang) --- */
+.colored-section {
+  background: linear-gradient(135deg, #0072ff, #00c6ff); /* Yeh ek blue gradient background hai */
+  color: #fff;
+  padding: 100px 0;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #333;
+  padding: 80px 0;
+}
+
+/* --- CONTAINER (Content ko center mein rakhne ke liye) --- */
+.container-fluid {
+  padding: 3% 10%;
+}
+
+/* --- HEADINGS (Headings kaisi dikhengi) --- */
+.big-heading {
+  font-size: 3rem;
+  font-weight: 900; /* Ekdum bold text */
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+/* --- BUTTONS (Buttons ki style) --- */
+.btn {
+  border-radius: 50px; /* Buttons ke corner goal (rounded) honge */
+  padding: 12px 30px;
+  transition: 0.3s ease; /* Hover effect ke liye smooth transition */
+}
+
+.download-button {
+  margin: 10px 15px 10px 0;
+}
+
+
+/* ------------------------------
+   NAVBAR (Aapki website ka menu)
+------------------------------ */
+.navbar {
+  padding: 0 0 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Saare letters bade (capital) honge */
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 15px;
+  transition: 0.3s ease;
+}
+
+/* Navbar link hover effect: Jab mouse link par jaayega toh rang badlega */
+.nav-link:hover {
+  color: #ffd700 !important; /* Golden glow effect */
+}
+
+/* ------------------------------
+   TITLE SECTION (Sabse upar wala hissa)
+------------------------------ */
+#title .container-fluid {
+  text-align: left;
+}
+
+.title-image {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Image ke peeche shadow (parchhai) */
+  transition: transform 0.5s ease;
+}
+
+/* Title image hover effect: Jab mouse image par jaayega to thoda bada hoga */
+.title-image:hover {
+  transform: scale(1.05); /* Image halki si zoom hogi */
+}
+
+/* ------------------------------
+   FEATURES SECTION (Features wala hissa)
+------------------------------ */
+#features {
+  text-align: center;
+}
+
+.feature-box {
+    padding: 20px;
+}
+
+.features-icon {
+  color: #0072ff; /* Icon ka blue color */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Icon ke liye smooth effect */
+}
+
+/* Features icon hover effect: Jab mouse icon par jaayega */
+.features-icon:hover {
+  color: #00c6ff; /* Icon ka rang halka blue ho jaayega */
+  transform: scale(1.2); /* Icon thoda sa bada ho jaayega */
+}
+
+h3.features-header {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p.features-body {
+  color: #777;
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   TESTIMONIALS (Grahak ki raay)
+------------------------------ */
+#testimonials {
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.testimonial-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Image ko poora goal banata hai */
+  margin: 20px auto;
+  object-fit: cover;
+  border: 4px solid white; /* Image ke chaaron taraf white border */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4); /* Image ke peeche halki si chamak */
+}
+
+/* Carousel slide effect */
+.carousel-item {
+  transition: transform 0.7s ease-in-out;
+}
+
+/* ------------------------------
+   PRESS LOGOS (Company ke logo)
+------------------------------ */
+#press {
+  background: #f8f9fb;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.press-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Logos ko goal banata hai */
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+/* Press logo hover effect */
+.press-img:hover {
+  transform: scale(1.1); /* Logo thoda sa bada hoga */
+}
+
+/* ------------------------------
+   PRICING SECTION (Plan aur keematein)
+------------------------------ */
+#pricing {
+  text-align: center;
+  padding: 100px 5%;
+  background: linear-gradient(180deg, #ffffff, #f1f9ff); /* White se light blue tak ka gradient */
+}
+
+.card {
+  border: none;
+  border-radius: 20px; /* Card ke corners goal honge */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Pricing card hover effect: Jab mouse card par jaayega */
+.card:hover {
+  transform: translateY(-10px); /* Card thoda sa upar uthega */
+}
+
+.card-header {
+  background-color: #0072ff;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-body p {
+  color: #666;
+}
+
+.price-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* ------------------------------
+   CTA SECTION (Aakhiri download section)
+------------------------------ */
+#cta {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* ------------------------------
+   FOOTER (Website ka sabse nichla hissa)
+------------------------------ */
+#footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111; /* Dark background */
+  color: #aaa;
+}
+
+.footer-icon {
+  font-size: 25px;
+  margin: 10px;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Footer icon hover effect */
+.footer-icon:hover {
+  color: #00c6ff; /* Icon ka rang blue ho jaayega */
+  transform: translateY(-3px); /* Icon thoda upar uthega */
+}
+
+#footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   ANIMATIONS (Animation effect)
+------------------------------ */
+/* Yeh effect page load hone par sections ko smoothly upar laata hai */
+section {
+  animation: fadeUp 1.2s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
